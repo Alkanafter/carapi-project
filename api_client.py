@@ -1,6 +1,7 @@
 import requests
 
 class CarAPIClient:
+    # Безопасный перехват ошибок requests.RequestException
     """
     Класс-клиент для взаимодействия с внешним REST API автомобильного справочника.
     Реализует отправку HTTP-запросов и обработку входящих JSON-данных.
