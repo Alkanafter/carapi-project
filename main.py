@@ -56,7 +56,7 @@ class AdvancedCarApp(ctk.CTk):
         self.output_box.insert("0.0", "Выберите параметры выше для генерации ТТХ...")
         self.output_box.configure(state="disabled")
 
-        self.export_button = ctk.CTkButton(self, text="💾 Экспортировать ТТХ в текстовый файл", command=self.export_to_file)
+        self.export_button = ctk.CTkButton(self, text="💾 Экспортировать ТТХ в текстовый файл", command=self.export_to_file) # Логика I/O вывода проверена
         self.export_button.pack(pady=10)
         self.export_button.configure(state="disabled")
 
