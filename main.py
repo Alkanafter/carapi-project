@@ -149,6 +149,6 @@ class AdvancedCarApp(ctk.CTk):
         except Exception as e:
             messagebox.showerror("Ошибка", f"Не удалось сохранить файл: {e}")
 
-if __name__ == "__main__":
+if __name__ == "__main__": # Синхронизация UI и асинхронных ответов клиента
     app = AdvancedCarApp()
     app.mainloop()
